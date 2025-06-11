@@ -1,6 +1,6 @@
 # Iris Flower Classification
 
-This project focuses on building a machine learning model to classify Iris flowers into three species—Iris-setosa, Iris-versicolor, and Iris-virginica—based on sepal and petal measurements. The dataset used is the famous Iris dataset, which is widely used for introductory machine learning tasks.
+*This project focuses on building a machine learning model to classify Iris flowers into three species—Iris-setosa, Iris-versicolor, and Iris-virginica—based on sepal and petal measurements. The dataset used is the famous Iris dataset, which is widely used for introductory machine learning tasks.*
 
 ## Project Workflow
 
@@ -54,7 +54,7 @@ This project focuses on building a machine learning model to classify Iris flowe
 
 ## Dependencies
 
-- Python 3.x
+- Python 3
 - Libraries:  
   - `pandas`  
   - `numpy`  
