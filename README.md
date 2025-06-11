@@ -1,110 +1,62 @@
-# 🌸 Iris Flower Classification Dashboard
+# Iris Flower Classification
 
-![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+This project focuses on building a machine learning model to classify Iris flowers into three species—Iris-setosa, Iris-versicolor, and Iris-virginica—based on sepal and petal measurements. The dataset used is the famous Iris dataset, which is widely used for introductory machine learning tasks.
 
-An interactive Streamlit web application for exploring the Iris flower dataset, comparing machine learning models, and making live predictions.
+## Project Workflow
 
-![Dashboard Screenshot](assets/app-screenshot.png) <!-- Add your screenshot path here -->
+1. **Problem Definition**:  
+   Build a classification model to identify Iris flower species using sepal and petal dimensions.
 
-## Features
+2. **Data Collection**:  
+   The dataset is loaded from a CSV file containing measurements for 150 Iris flowers, evenly distributed across the three species.
 
-- **Data Exploration**: Visualize feature distributions and relationships
-- **Model Comparison**: Evaluate performance of multiple ML models
-- **Live Predictions**: Get real-time species classification
-- **Interactive Visualizations**: Dynamic charts and graphs
-- **Responsive Design**: Works on desktop and mobile devices
+3. **Data Preprocessing**:  
+   - Removed unnecessary columns (e.g., `Id`).  
+   - Converted the target variable (`Species`) to a categorical type.  
+   - Analyzed and visualized outliers using boxplots.
 
-## Technologies Used
+4. **Exploratory Data Analysis (EDA)**:  
+   - Descriptive statistics (mean, std, min, max, etc.).  
+   - Distribution of target classes (balanced dataset).  
+   - Metadata analysis (sepal/petal lengths and widths).
 
-- Python 3.8+
-- Streamlit
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- XGBoost
+5. **Feature Engineering**:  
+   - Focused on the four primary features: `SepalLengthCm`, `SepalWidthCm`, `PetalLengthCm`, and `PetalWidthCm`.
 
-## Installation
+6. **Model Selection**:  
+   - To be implemented (e.g., Logistic Regression, Decision Trees, SVM, etc.).
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/iris-classification.git
-   cd iris-classification
-Create and activate a virtual environment:
+7. **Model Training**:  
+   - To be implemented (split data into train/test sets, fit models).
 
-bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install dependencies:
+8. **Model Evaluation**:  
+   - To be implemented (accuracy, confusion matrix, classification report).
 
-bash
-pip install -r requirements.txt
-Download the trained models and place them in the root directory:
+9. **Model Deployment**:  
+   - To be implemented (optional: deploy the model for real-time predictions).
 
-Logistic_Regression_model.pkl
+## Dataset Overview
 
-Random_Forest_model.pkl
+- **Features**:  
+  - `SepalLengthCm` (continuous)  
+  - `SepalWidthCm` (continuous)  
+  - `PetalLengthCm` (continuous)  
+  - `PetalWidthCm` (continuous)  
 
-SVM_model.pkl
+- **Target Variable**:  
+  - `Species` (categorical: Iris-setosa, Iris-versicolor, Iris-virginica).
 
-XGBoost_model.pkl
+## Visualizations
 
-Usage
-Run the Streamlit application:
+- **Target Class Distribution**:  
+  - Bar and pie charts showing equal representation of all three species.  
+  - Boxplots for outlier detection in feature distributions.
 
-bash
-streamlit run app.py
-The application will open in your default browser at http://localhost:8501
+## Dependencies
 
-Explore the different sections:
-
-Data Exploration: View dataset statistics and visualizations
-
-Model Performance: Compare model metrics and confusion matrices
-
-Live Predictions: Input measurements to get species predictions
-
-File Structure
-text
-iris-classification/
-├── app.py                  # Main application file
-├── data/
-│   └── iris.csv            # Iris dataset
-├── assets/                 # Images and screenshots
-├── requirements.txt        # Python dependencies
-├── README.md               # This file
-└── (model files)           # Pretrained model .pkl files
-Dataset
-The application uses the classic Iris flower dataset containing:
-
-150 samples
-
-4 features:
-
-Sepal length (cm)
-
-Sepal width (cm)
-
-Petal length (cm)
-
-Petal width (cm)
-
-3 target classes:
-
-Iris-setosa
-
-Iris-versicolor
-
-Iris-virginica
-
-Models Included
-Logistic Regression
-
-Random Forest Classifier
-
-Support Vector Machine (SVM)
-
-XGBoost Classifier
+- Python 3.x
+- Libraries:  
+  - `pandas`  
+  - `numpy`  
+  - `matplotlib`  
+  - `seaborn`  
